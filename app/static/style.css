@@ -1,0 +1,13 @@
+@font-face {
+    font-family:"Miraculous&Christmas";
+    src: url("font/Miraculous&Christmas.ttf") format("truetype");
+}
+
+body {
+    font-family: "Miraculous&Christmas";
+    font-size: 2rem;
+}
+
+h1 {
+    color: red;
+}

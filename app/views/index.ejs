@@ -13,14 +13,16 @@
   <% for ( const question of questions ) { %> 
     <table>
         <tr>
-            <%= question %> 
+            <%= question.content %> 
         </tr>
+        <% for ( const answer of answers ) { %>
         <tr>
-            <p>réponse1</p><input type="checkbox" name="réponse1" id="1">
-            <p>réponse2</p><input type="checkbox" name="réponse2" id="2">
-            <p>réponse3</p><input type="checkbox" name="réponse3" id="3">
+            <p><%= answer.content %> </p><input type="checkbox" name="réponse1" id="1">
+            <p><%= answer.content %></p><input type="checkbox" name="réponse2" id="2">
+            <p><%= answer.content %></p><input type="checkbox" name="réponse3" id="3">
             
         </tr>
+        <% } %>
     </table>
     <% } %> 
 </body>

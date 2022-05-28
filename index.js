@@ -14,7 +14,7 @@ server.use(express.static("app/static"));
 
 // Permet de lire le body des POST
 server.use(express.urlencoded({ extended: true }));
-
+ 
 // importation du routeur
 const router = require("./app/router");
 

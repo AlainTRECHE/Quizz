@@ -11,19 +11,33 @@
     <h1>Quiz de NOËL</h1>
 
   <% for ( const question of questions ) { %> 
-    <table>
-        <tr>
+    
+    <ul>
+        <h2>
             <%= question.content %> 
-        </tr>
+        </h2>
         <% for ( const answer of answers ) { %>
-        <tr>
+            <%  function answerRender(req, res) { %> 
+            <% if ( question.id === 1 ) { res.render(answer.id === 1,2,3) }%>
+    <% if ( question.id === 2 ) { res.render(answer.id === 4,5,6) }%>
+    <% if ( question.id === 3 ) { res.render(answer.id === 7,8,9) }%>
+    <% if ( question.id === 4 ) { res.render(answer.id === 10,11,12) }%>
+    <% if ( question.id === 5 ) { res.render(answer.id === 13,14,15) }%>
+    <% if ( question.id === 6 ) { res.render(answer.id === 16,17,18) }%>
+    <% if ( question.id === 7 ) { res.render(answer.id === 19,20,21) }%>
+    <% if ( question.id === 8 ) { res.render(answer.id === 22,23,24) }%>
+    <% if ( question.id === 9 ) { res.render(answer.id === 25,26,27) }%>
+    <% if ( question.id === 10 ) { res.render(answer.id === 28,29,30) }%>
+    <% if ( question.id === 11 ) { res.render(answer.id === 31,32,33) }%>
+    <% if ( question.id === 12 ) { res.render(answer.id === 34,35,36) } }%> 
+        <li>
             <p><%= answer.content %> </p><input type="checkbox" name="réponse1" id="1">
-            <p><%= answer.content %></p><input type="checkbox" name="réponse2" id="2">
-            <p><%= answer.content %></p><input type="checkbox" name="réponse3" id="3">
             
-        </tr>
+        </li>
         <% } %>
-    </table>
+    </ul>
     <% } %> 
+
+    
 </body>
 </html>
